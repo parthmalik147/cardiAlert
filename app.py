@@ -46,11 +46,13 @@ if selected == 'About us':
     st.image(
         img,
         caption ="team cardiAlert",
-        width = 800,
-        channels = "BGR"
+        width = 500,
+        channels = "BGR",
+        use_column_width = "always"
     )
     st.write('''
-    ### streamlit app and the ML model is heavily inspired by siddhardhan23 at GitHub. Do check his work out at https://github.com/siddhardhan23/multiple-disease-prediction-streamlit-app
+    ### streamlit app and the ML model is heavily inspired by siddhardhan23 at GitHub.
+    ### Do check his work out at https://github.com/siddhardhan23/multiple-disease-prediction-streamlit-app
     ''')
 
        
