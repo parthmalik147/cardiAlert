@@ -53,7 +53,8 @@ if selected == 'About us':
 
     st.write('''
     ### streamlit app and the ML model is heavily inspired by siddhardhan23 at GitHub.
-    ### Do check his work out at https://github.com/siddhardhan23/multiple-disease-prediction-streamlit-app
+    ### Do check his work out at 
+    ##### https://github.com/siddhardhan23/multiple-disease-prediction-streamlit-app
     ''')
 
        
