@@ -1,9 +1,7 @@
-import cv2
 import os
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-
 
 # Set page configuration
 st.set_page_config(page_title="cardiAlert",
@@ -43,14 +41,16 @@ if selected == 'About us':
     ### cardiAlert is a web application which assits healthcare professionals to assess the risk of heart disease. It takes in the clinical data of the patient and makes informed decisions using machine learning. This application is intended to be used by professionals.
     ##      This web-app is developed by a team of students of GD Goenka University as their Design-Thinking project.
     ''')
-    img = cv2.imread("team.jpg")
-    st.image(
-        img,
-        caption ="team cardiAlert",
-        width = 500,
-        channels = "BGR",
-        use_column_width = "always"
-    )
+    
+
+    
+    post ={
+            
+            "image_url": "team.jpg",
+        }
+    st.image(post['image_url'], use_column_width=True)
+    st.markdown("<h5 style='text-align: center; color: grey;'>team cardiAlert</h5>", unsafe_allow_html=True)
+
     st.write('''
     ### streamlit app and the ML model is heavily inspired by siddhardhan23 at GitHub.
     ### Do check his work out at https://github.com/siddhardhan23/multiple-disease-prediction-streamlit-app
